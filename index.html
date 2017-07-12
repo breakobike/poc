@@ -70,13 +70,9 @@
 
         function check() {
             var cc = parseInt($('#cc')[0].value);
-            code = parseInt($('#ref')[0].value);
+            code = $('#ref')[0].value;
             if (isNaN(cc)) {
                 alert(cc + '(Country Code) is not a vaild input')
-                return false;
-            }
-            if (isNaN(code)) {
-                alert(code + '(Referrer Code) is not a vaild input')
                 return false;
             }
             var d = new Date();

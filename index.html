@@ -119,6 +119,7 @@
                 });
 
             } else {
+            	$('#msg').html('<div class="alert alert-success" role="alert">Finished!</div>')
                 //console.log('fin')
             }
         }
@@ -126,7 +127,7 @@
         function done(suffix) {
             setTimeout(function() {
                 send(++suffix)
-            }, 5);
+            }, 50);
         }
     </script>
 </head>
@@ -158,6 +159,7 @@
         <div class="jumbotron">
             <h1>Break oBike Rating System</h1>
             <p>A automation of adding point for oBike rating system</p>
+            <p>P.S: When your point reach 30000 (maybe, IDK, :P), you will be able to rent the bike without any charge.</p>
             <p><b>Warning: For Educational Purposes Only!</b></p>
         </div>
 

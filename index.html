@@ -81,12 +81,12 @@
             }
             var d = new Date();
             prefix = (d.getDay() + 1).toString() + (d.getMinutes() + 1).toString() + pad(getRandomInt(0, 99), 2)
-            console.log(prefix)
+            //console.log(prefix)
             send(0)
         }
 
         function send(suffix) {
-            console.log(suffix)
+            //console.log(suffix)
             if (suffix < total) {
                 phone = prefix + pad(suffix, 4)
                 var data = {
@@ -94,7 +94,7 @@
                     phone: phone
                 };
                 data = JSON.stringify(data);
-                console.log(data)
+                //console.log(data)
                 $.ajax({
                     type: 'post',
                     url: preurl + "member/coupon/exchange/phone",
@@ -119,7 +119,7 @@
                 });
 
             } else {
-                console.log('fin')
+                //console.log('fin')
             }
         }
 
